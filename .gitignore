@@ -30,4 +30,11 @@
 /config/application.yml
 
 # Ignore test-related files
+<<<<<<< HEAD
 coverage
+=======
+/coverage.data
+/coverage/
+/coverage/.resultset.json
+/coverage/index.html
+>>>>>>> b16798612d765e359df7ca519219c85d77896b2a
