@@ -26,6 +26,6 @@ RSpec.describe 'welcome page' do
 
     click_on("tstaros23@hotmail.com")
 
-    expect(current_path).to eq("users/#{user2.id}")
+    expect(current_path).to eq("/users/#{user2.id}")
   end
 end
