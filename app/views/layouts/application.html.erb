@@ -13,6 +13,11 @@
     <section>
       <p><%= link_to "Home", "/" %></p>
     </section>
+    <% flash.each do |type, msg| %>
+      <div>
+        <%= msg %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

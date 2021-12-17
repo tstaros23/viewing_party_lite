@@ -14,7 +14,4 @@ class MovieFacade
     movie_cast = MovieService.get_cast_members(movie_id)
     Movie.new(movie_data, movie_cast)
   end
-
-
-
 end
