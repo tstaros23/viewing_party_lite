@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   get '/users/:id/discover', to: 'movies#new'
   get '/users/:id/movies', to: 'movies#index'
 
-  get '/login', to: 'users#login_form'
-  post '/login', to: 'users#login_user'
+  get '/login', to: 'sessions#new'
+  delete '/logout', to: 'sessions#destroy'
+  post '/login', to: 'sessions#create'
 
   get '/users/:user_id/movies/:id', to: 'movies#show'
 

@@ -40,4 +40,12 @@ RSpec.describe 'user show page' do
     expect(page).to have_content(party2.day)
     expect(page).to have_content(party2.start_time)
   end
+
+  it "a visitor gets redirected if they try to visit the dashboard path" do
+    visit "/users/:id"
+
+    expect(current_path).to eq('/')
+
+    expect(page).to have_content("Must be registered and logged in to see your dashboard")
+  end
 end
